@@ -4,16 +4,20 @@
 <head>
     <meta charset=utf-8>
     <title>JavaScript Skule</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
+
 
 </head>
 
 <body>
-    <p>Welcome</p>
+    <p id="title">Welcome</p>
     <input id="my-input">
     <button>Click me</button>
     <button id="n" onclick="increaseN()">Num increase</button>
     <button onclick="sus()">alert</button>
+    <div id="chatbox" class="chatbox">
+
+    </div>
 
     
     <script>
@@ -38,9 +42,11 @@
         // alerts the value of the input field
         function sus(){
             let y = document.getElementById("my-input").value;
-            console.log(y)
-            alert(y);
-            console.log(y)
+            let tag = document.createElement("p")
+            let text = document.createTextNode(y)
+            tag.appendChild(text)
+            let element = document.getElementById("chatbox")
+            element.appendChild(tag)
         }
     </script>
 

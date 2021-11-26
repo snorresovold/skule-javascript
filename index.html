@@ -10,14 +10,16 @@
 
 <body>
     <p>Welcome</p>
-    <input id="my-input" >
+    <input id="my-input">
     <button>Click me</button>
     <button id="n" onclick="increaseN()">Num increase</button>
+    <button onclick="sus()">alert</button>
 
     
     <script>
-        let n = 0
 
+    // logs and increments n
+        let n = 0
         function increaseN(){
             console.log(n)
             return n++
@@ -28,20 +30,18 @@
         console.log(welcTag)
 
         knappBleTrykketPaa();
-        
+        //logs "hei på dere"
         function knappBleTrykketPaa()
         {
             console.log("Hei på dere!");
         }
-
-        var x = 0
-        console.log(x)
-        var x = 20
-        console.log(x)
-        //let a = 0
-        //console.log(a)
-        //let a = 30
-        //console.log(a)
+        // alerts the value of the input field
+        function sus(){
+            let y = document.getElementById("my-input").value;
+            console.log(y)
+            alert(y);
+            console.log(y)
+        }
     </script>
 
 </body>

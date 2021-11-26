@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <title>JavaScript Skule</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <p>Welcome</p>
+    <input id="my-input" >
+    <button>Click me</button>
+    <button id="n" onclick="increaseN()">Num increase</button>
+
+    
+    <script>
+        let n = 0
+
+        function increaseN(){
+            console.log(n)
+            return n++
+        }
+
+
+        let welcTag = document.getElementById("welc-text");
+        console.log(welcTag)
+
+        knappBleTrykketPaa();
+        
+        function knappBleTrykketPaa()
+        {
+            console.log("Hei på dere!");
+        }
+
+        var x = 0
+        console.log(x)
+        var x = 20
+        console.log(x)
+        //let a = 0
+        //console.log(a)
+        //let a = 30
+        //console.log(a)
+    </script>
+
+</body>
+
+</html>

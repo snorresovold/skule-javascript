@@ -15,40 +15,53 @@
     <button>Click me</button>
     <button id="n" onclick="increaseN()">Num increase</button>
     <button onclick="sus()">alert</button>
+    <button onclick="myFunction()">wow</button>
     <div id="chatbox" class="chatbox">
+
+    <p id="demo"></p>
 
     </div>
 
     
     <script>
 
-    // logs and increments n
-        let n = 0
-        function increaseN(){
-            console.log(n)
-            return n++
-        }
+    function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+    }
+
+    
+
+    // // logs and increments n
+    //     let n = 0
+    //     function increaseN(){
+    //         console.log(n)
+    //         return n++
+    //     }
 
 
-        let welcTag = document.getElementById("welc-text");
-        console.log(welcTag)
+    //     let welcTag = document.getElementById("welc-text");
+    //     console.log(welcTag)
 
-        knappBleTrykketPaa();
-        //logs "hei på dere"
-        function knappBleTrykketPaa()
-        {
-            console.log("Hei på dere!");
-        }
-        // alerts the value of the input field
-        function sus(){
-            let y = document.getElementById("my-input").value;
-            let tag = document.createElement("p")
-            let text = document.createTextNode(y)
-            tag.appendChild(text)
-            let element = document.getElementById("chatbox")
-            element.prepend(tag)
-        }
-    </script>
+    //     knappBleTrykketPaa();
+    //     //logs "hei på dere"
+    //     function knappBleTrykketPaa()
+    //     {
+    //         console.log("Hei på dere!");
+    //     }
+    //     // alerts the value of the input field
+    //     function sus(){
+    //         let y = document.getElementById("my-input").value;
+    //         let tag = document.createElement("p")
+    //         let text = document.createTextNode(y)
+    //         tag.appendChild(text)
+    //         let element = document.getElementById("chatbox")
+    //         element.prepend(tag)
+    //     }
+    // </script>
 
 </body>
 

@@ -1,10 +1,12 @@
+import React, {useState} from "react";
+import RecipieList from "./components/RecipieList";
+
 
 
 function App() {
   return (
     <div className="App">
-      hei martin, basic react app hilsen snorre
-      
+      <RecipieList/>
     </div>
   );
 }

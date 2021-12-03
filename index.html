@@ -26,42 +26,42 @@
     <script>
 
     function myFunction() {
-    var person = prompt("Please enter your name", "Harry Potter");
-    if (person != null) {
+    let person = prompt("Please enter your name");
+    console.log(person)
+    if (person !== null) {
         document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
+        "Hello " + person + "Give Snorre the top grade";
+        }
     }
-    }
-
     
 
-    // // logs and increments n
-    //     let n = 0
-    //     function increaseN(){
-    //         console.log(n)
-    //         return n++
-    //     }
+    // logs and increments n
+        let n = 0
+        function increaseN(){
+            console.log(n)
+            return n++
+        }
 
 
-    //     let welcTag = document.getElementById("welc-text");
-    //     console.log(welcTag)
+        let welcTag = document.getElementById("welc-text");
+        console.log(welcTag)
 
-    //     knappBleTrykketPaa();
-    //     //logs "hei på dere"
-    //     function knappBleTrykketPaa()
-    //     {
-    //         console.log("Hei på dere!");
-    //     }
-    //     // alerts the value of the input field
-    //     function sus(){
-    //         let y = document.getElementById("my-input").value;
-    //         let tag = document.createElement("p")
-    //         let text = document.createTextNode(y)
-    //         tag.appendChild(text)
-    //         let element = document.getElementById("chatbox")
-    //         element.prepend(tag)
-    //     }
-    // </script>
+        knappBleTrykketPaa();
+        //logs "hei på dere"
+        function knappBleTrykketPaa()
+        {
+            console.log("Hei på dere!");
+        }
+        // alerts the value of the input field
+        function sus(){
+            let y = document.getElementById("my-input").value;
+            let tag = document.createElement("p")
+            let text = document.createTextNode(y)
+            tag.appendChild(text)
+            let element = document.getElementById("chatbox")
+            element.prepend(tag)
+        }
+    </script>
 
 </body>
 
